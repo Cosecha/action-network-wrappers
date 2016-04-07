@@ -7,6 +7,9 @@ Blue: #356c84
 
 */
 
+body{
+	background: #fff;
+}
 #can_main_col{
 	background: #fff;
 }
