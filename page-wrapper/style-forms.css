@@ -1,0 +1,745 @@
+/*
+The Action Network
+Forms and such
+Since 2.5.1
+Authored by Jake Caputo
+*/
+
+/* FORMS -------------------------------------------------------------------------- */
+
+input,
+textarea,
+select {
+    color: #4E4E4E;
+    font-size: 16px;
+    line-height: normal;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    outline:none;
+}
+
+span.can_select {
+	font-size: 16px;
+}
+
+input[type="file"] {
+	line-height: normal !important;
+	font-size: 11px !important;
+}
+
+#fancybox-content input[type="file"],
+.location_upload input[type="file"] {
+	border:1px solid #CFCFCF;
+	padding:10px 10px 8px;
+	border-radius: 3px;
+	max-width: 278px;
+	background-color:#FFFFFF;
+	box-sizing:border-box;
+}
+
+form ul,
+form li,
+form label,
+form input[type="text"],
+form textarea,
+form select {
+    float: left;
+}
+
+	.fundraising_form_builder .control-label {
+		width: 100%;
+	}
+
+	.fundraising_form_builder .check_radio_field label {
+		width: 100%;
+	}
+
+input[type="text"],
+input[type="search"],
+input[type="password"],
+input[type="url"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+	-webkit-appearance: none;
+    height: 33px;
+    padding: 4px 9px;
+    width: 100%;
+    max-width: 345px;
+    transition: border-color .3s linear, background-color .3s linear;
+    border-radius: 3px;
+}
+
+	input.fullwidth {
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+
+	input[type="number"] {
+		padding: 0px 9px;
+	}
+
+.list_search input[type="text"].search {
+	width: 100%;
+	max-width: 100%;
+	float: left;
+	line-height: 30px;
+	font-size: 14px;
+	height: 30px;
+	margin: 0;
+	display: none;
+	background-color: #F9F9F9;
+	position: relative;
+	z-index: 1;
+	padding-left: 40px;
+	border-radius: 3px;
+}
+
+	.list_search input[type="text"].search:focus {
+		background-color: #FFFFFF;
+	}
+
+	.list_search.open_search {
+		background-color: #FCFCFC;
+		border-top: 1px solid #F4F4F4;
+		border-right: 1px solid #F4F4F4;
+		border-left: 1px solid #F4F4F4;
+		padding: 10px;
+		box-sizing:border-box;
+	}
+
+		.list_search.open_search input[type="text"].search {
+			display: block;
+			padding: 0 10px;
+			background-color: #FFFFFF;
+		}
+
+.medium {
+	width: 200px !important
+}
+
+.mini {
+	width: 50px !important
+}
+
+.tiny {
+	width: 100px !important
+}
+
+select {
+    height: 33px;
+    padding:0 30px 0 20px;
+    width: 100%;
+    max-width: 345px;
+    transition: border-color .3s linear, background-color .3s linear;
+    border-radius: 3px;
+	transition: inherit;
+}
+
+select.multi_select {
+	height: 103px;
+	border:1px solid #CFCFCF;
+	padding:5px 10px;
+}
+
+#include_exclude_wrap select.multi_select {
+	height: 35px;
+}
+
+.select2-container {
+	width: 100%;
+	text-align: left;
+	max-width: 100%;
+}
+
+	#main_wrap .select2-container .select2-choice,
+	#fancybox-content .select2-container .select2-choice {
+		background-image: none;
+		border-color: #CFCFCF;
+		height: 31px;
+		line-height: 31px;
+		border-radius: 3px;
+	}
+
+		#main_wrap .select2-container .select2-choice .select2-arrow,
+		#fancybox-content .select2-container .select2-choice .select2-arrow {
+			background: transparent;
+			border:none;
+		}
+
+			#main_wrap .select2-container .select2-choice .select2-arrow b,
+			#fancybox-content .select2-container .select2-choice .select2-arrow b {
+				background-position: 0 3px;
+			}
+
+	#main_wrap .select2-container.monster .select2-choice,
+	#fancybox-content .select2-container.monster .select2-choice {
+		height: 48px;
+		line-height: 48px;
+	}
+
+		#main_wrap .select2-container.monster .select2-choice .select2-arrow b,
+		#fancybox-content .select2-container.monster .select2-choice .select2-arrow  {
+			background-position: 0 12px;
+		}
+
+.select2-drop {
+	border: 1px solid !important;
+	border-radius: 4px !important;
+}
+
+.select2-drop-active {
+	border-color: #CFCFCF !important;
+}
+
+	.select2-drop-active:not(.select2-drop-multi) {
+		margin-top: -2px !important;
+	}
+
+		.select2-drop-active:not(.select2-drop-multi) .select2-search {
+			margin-top: 5px;
+		}
+
+.select2-search:after {
+	font-family: "FontAwesome";
+	content: "\f002";
+	position: absolute;
+	top:3px;
+	right:10px;
+	color:#888;
+	font-size: 12px;
+}
+
+.select2-drop.select2-drop-above .select2-search:after {
+	top:6px;
+}
+
+.select2-search input {
+	max-width: 100%;
+	background-image: none !important;
+	background: rgba(0, 0, 0, 0) -moz-linear-gradient(center bottom , #fff 85%, #eee 99%) repeat scroll 0 0 !important;
+	min-height: 36px !important;
+}
+
+.select2-container-active .select2-choice,
+.select2-container-active .select2-choices {
+	box-shadow: none !important;
+}
+
+.select2-results .select2-no-results,
+.select2-results .select2-searching,
+.select2-results .select2-selection-limit {
+	padding: 3px 5px;
+}
+
+.select2-container-multi .select2-choices {
+	border:1px solid #CFCFCF !important;
+	background-image: none !important;
+	border-radius: 3px;
+	box-sizing:border-box;
+	width: 100%;
+}
+
+	.select2-container-multi .select2-choices .select2-search-field,
+	.select2-container-multi .select2-choices .select2-search-field input {
+		width: 100% !important;
+		max-width: 100%;
+	}
+
+	.select2-container-multi .select2-choices .select2-search-choice {
+		width: auto;
+		margin: 5px !important;
+		line-height: 1em !important;
+		box-shadow: none !important;
+		border:1px solid #d0d0d0 !important;
+		background-image: none !important;
+	}
+
+	.select2-search-choice-close {
+		top:9px !important
+	}
+
+	.select2-container-multi .select2-search-choice-close {
+		top:5px !important
+	}
+
+.select2-results .select2-result-label {
+	display: inline-block
+}
+
+.select2-results ul.select2-result-sub > li .select2-result-label {
+	padding-left: 7px !important
+}
+
+.select2-results ul.select2-result-sub > li li .select2-result-label {
+	padding-left: 3px !important
+}
+
+.select2-results li.dropspacer {
+	padding-left: 210px
+}
+
+	.select2-results li.dropspacer:not(.spacer-) .select2-result-label {
+		padding-left: 9px !important;
+		position: relative;
+	}
+
+	.select2-results li.dropspacer:not(.spacer-) .select2-result-label:before {
+		font-family: "FontAwesome";
+		content:"\f111";
+		font-size: .3em;
+		position: absolute;
+		left:0;
+		top:4px;
+	}
+
+.select2-results li.dropspacer.spacer- {
+	padding-left: 0
+}
+
+.select2-results li.dropspacer.spacer-1 {
+	padding-left: 10px
+}
+
+.select2-results li.dropspacer.spacer-2 {
+	padding-left: 20px
+}
+
+.select2-results li.dropspacer.spacer-3 {
+	padding-left: 30px
+}
+
+.select2-results li.dropspacer.spacer-4 {
+	padding-left: 40px
+}
+
+.select2-results li.dropspacer.spacer-5 {
+	padding-left: 50px
+}
+
+.select2-results li.dropspacer.spacer-6 {
+	padding-left: 60px
+}
+
+.select2-results li.dropspacer.spacer-7 {
+	padding-left: 70px
+}
+
+.select2-results li.dropspacer.spacer-8 {
+	padding-left: 80px
+}
+
+.select2-results li.dropspacer.spacer-9 {
+	padding-left: 90px
+}
+
+.select2-results li.dropspacer.spacer-10 {
+	padding-left: 100px
+}
+
+.select2-results li.dropspacer.spacer-11 {
+	padding-left: 110px
+}
+
+.select2-results li.dropspacer.spacer-12 {
+	padding-left: 120px
+}
+
+.select2-results li.dropspacer.spacer-13 {
+	padding-left: 130px
+}
+
+.select2-results li.dropspacer.spacer-14 {
+	padding-left: 150px
+}
+
+.select2-results li.dropspacer.spacer-15 {
+	padding-left: 150px
+}
+
+.select2-results li.dropspacer.spacer-16 {
+	padding-left: 160px
+}
+
+.select2-results li.dropspacer.spacer-17 {
+	padding-left: 170px
+}
+
+.select2-results li.dropspacer.spacer-18 {
+	padding-left: 180px
+}
+
+.select2-results li.dropspacer.spacer-19 {
+	padding-left: 190px
+}
+
+.select2-results li.dropspacer.spacer-20 {
+	padding-left: 200px
+}
+
+#main_wrap .select2-dropdown-open .select2-choice,
+#fancybox-content .select2-dropdown-open .select2-choice {
+	background-color:#FFF;
+	box-shadow: none;
+}
+
+#letter-select-master-wrap .select2-choices {
+	height: 200px !important;
+	overflow: scroll;
+}
+
+.select_in_draft:before {
+	content:"Draft";
+	background-color:#CD2121;
+	color:#FFFFFF;
+	font-size: 10px;
+	border-radius: 2px;
+	padding:0 5px;
+	position: relative;
+	top:-2px;
+	margin-right: 5px;
+}
+
+.select_wrap {
+	position: relative;
+	height: 33px;
+}
+
+.select2-container.can_select {
+	background: none;
+	border: none;
+	border-radius: 0;
+	padding: 0;
+}
+
+.can_select,
+#builder .customSelect {
+	line-height: 31px;
+    border: 1px solid #CFCFCF;
+    background: url("../images/dropdownarrow.png") right 12px no-repeat #FFFFFF;
+    background-size:23px 9px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding:0 30px 0 10px;
+    z-index: 2;
+    zoom: 1;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+	.can_selectFullInner .can_selectInner {
+		width: calc(100% - 25px) !important;
+	}
+
+	.can_select span,
+	#builder .customSelect {
+		overflow: hidden;
+		display: -moz-box !important;
+	}
+
+	#builder .customSelect {
+		display: block !important;
+		height: 33px;
+	}
+
+	.can_select.tiny.inline {
+		display: -webkit-inline-flex !important;
+		height: 33px;
+	}
+
+	select.can_select,
+	#builder select {
+		left: 0;
+		top:0;
+	}
+
+	#builder select {
+		z-index: 3;
+	}
+
+	#builder .customSelect,
+	#builder select,
+	#builder input,
+	#builder .select2-container {
+		max-width: 210px !important;
+		width: 210px !important;
+		float: left !important;
+		font-size: 13px !important;
+	}
+
+		#builder .rule-value-container .select2-container:first-child,
+		#builder .select2-search-field input {
+			max-width: 90% !important;
+			width: 90% !important;
+		}
+
+		#builder .rule-operator-container .customSelect,
+		#builder .rule-operator-container select {
+			max-width: 90px !important;
+		}
+
+		#builder input {
+			height: 33px;
+			padding:0 10px;
+		}
+
+		#builder input.select2-input {
+			height: 29px;
+		}
+
+	#builder span.block.left {
+		line-height: 33px;
+		margin: 0 5px;
+	}
+
+#donate_form .can_select {
+	background-image: url("../includes/js/select2/select2.png");
+	background-position: right -42px top 6px !important;
+	background-size: auto;
+}
+
+textarea {
+	-webkit-appearance: none;
+    height: 115px;
+    padding: 9px;
+    width: 100%;
+    max-width: 345px;
+    border-radius: 3px;
+    resize: vertical;
+    transition: border-color .3s linear, background-color .3s linear;
+}
+
+	.fundraising_form_builder textarea {
+		max-width: 100%;
+	}
+
+	textarea.fulltextarea {
+		max-width: 100%;
+	}
+
+	textarea.nogrow {
+		resize: none;
+	}
+
+	textarea.talltextarea {
+		height: 250px;
+	}
+
+input[type="text"],
+input[type="search"],
+input[type="password"],
+input[type="url"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+    border: 1px solid #CFCFCF;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus,
+input[type="password"]:focus,
+input[type="url"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border: 1px solid #9C9C9C
+}
+
+input[type="text"].disabled,
+input[type="search"].disabled,
+input[type="password"].disabled,
+input[type="url"].disabled,
+input[type="email"].disabled,
+input[type="tel"].disabled,
+input[type="number"].disabled,
+textarea.disabled,
+input[type="submit"].disabled,
+.button.disabled,
+.disabled,
+span.can_selectDisabled {
+	cursor: default;
+	opacity: 0.5;
+	text-shadow: none;
+}
+
+input[type="checkbox"].disabled,
+input[type="radio"].disabled {
+	cursor: default;
+	opacity: 1;
+}
+
+input[type="text"].disabled::-webkit-input-placeholder,
+input[type="email"].disabled::-webkit-input-placeholder,
+textarea.disabled::-webkit-input-placeholder {
+    color: #4E4E4E !important;
+}
+
+input[type="text"].disabled:-moz-placeholder,
+input[type="email"].disabled:-moz-placeholder,
+textarea.disabled:-moz-placeholder {
+    color: #4E4E4E !important;
+}
+
+input[type="text"].disabled::-moz-placeholder,
+input[type="email"].disabled::-moz-placeholder,
+textarea.disabled::-moz-placeholder {
+    color: #4E4E4E !important;
+}
+
+input[type="text"].disabled:-ms-input-placeholder,
+input[type="email"].disabled:-ms-input-placeholder,
+textarea.disabled:-ms-input-placeholder {
+    color: #4E4E4E !important;
+}
+
+.action_sidebar input[type="submit"].disabled:hover {
+	background-color: #CD3A18;
+}
+
+.sample_field {
+	position: absolute;
+	z-index: 2;
+	bottom:0;
+	right:0;
+	font-size: 10px;
+	padding:0 10px;
+	line-height: 32px;
+	background-color: #ECECEC;
+	color:#767676;
+	opacity: .7;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter: alpha(opacity=70);
+    border-radius: 0 3px 3px 0;
+}
+
+.can_select + .sample_field {
+	bottom: 8px;
+}
+
+.sample_field.sample_textarea {
+	border-radius: 0 3px 0 0;
+}
+
+.sample_field.sample_button {
+	line-height:36px;
+	height:36px;
+}
+
+form ul:not(.pagination) {
+    width: 100%;
+}
+
+form ul:not(.pagination):not(.redactor-toolbar) li {
+    width: 100%;
+    list-style: none outside none;
+    position: relative;
+}
+
+	form .redactor-box ul,
+	form .redactor-box ul:not(.pagination):not(.redactor-toolbar) li,
+	.main_col #tab_wrap form .redactor-box ul:not(.pagination):not(.redactor-toolbar) li {
+		width: auto;
+	    list-style: outside disc none;
+	    position: relative;
+	}
+
+	form .redactor-box ul,
+	form .redactor-box ol {
+		margin-left: 20px;
+		float: none;
+	}
+
+		form .redactor-box ul li,
+		form .redactor-box ol li {
+			float: none
+		}
+
+	form .custom_fields ul:not(.pagination):not(.redactor-toolbar) li {
+		list-style: outside disc none;
+	}
+
+	form .custom_fields ol:not(.pagination):not(.redactor-toolbar) li,
+	form .redactor-box ol li {
+		width: auto;
+		list-style: decimal outside none;
+		position: relative;
+		margin-left: 20px;
+	}
+
+form ul.select2-choices li.select2-search-choice {
+	width: auto !important;
+}
+
+.action_sidebar ul {
+    margin-bottom: -10px
+}
+
+.action_sidebar #letter-form ul {
+	margin-bottom: -25px;
+}
+
+.action_sidebar li {
+    margin-bottom: 10px
+}
+
+label {
+    display: block;
+    word-wrap: break-word;
+}
+
+label.check_label {
+	float: none;
+}
+
+form#redactorInsertVideoForm label,
+form#redactorInsertVideoForm textarea {
+	float:none;
+}
+
+/* MONSTERS -------------------------------------------------------------------------- */
+
+.can_select.monster {
+	height: 50px;
+	line-height: 50px;
+	background-position: right -42px top 11px !important;
+}
+
+input.monster,
+a.button.monster {
+	overflow: hidden;
+	height: 50px;
+}
+
+a.button.monster {
+	line-height: 36px;
+}
+
+input[type="submit"].monster,
+a.button.monster {
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+/* Media for anything with a max width of 1023px. Mostly large tablets such as the iPad */
+
+@media only screen and (max-width: 1023px) {
+
+	.list_search input[type="text"].search {
+		padding-left: 9px;
+	}
+
+}
+
+/* Media for hiDef */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+	.select2-drop .select2-search input {
+		background-image: none !important;
+		background: rgba(0, 0, 0, 0) -moz-linear-gradient(center bottom , #fff 85%, #eee 99%) repeat scroll 0 0 !important;
+	}
+}

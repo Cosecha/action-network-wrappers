@@ -8,13 +8,16 @@ Blue: #356c84
 */
 
 body{
-	background: #333333;
+	background: #fff;
 }
-
 #can_main_col{
 	background: #fff;
 }
 
 h1, h2, h3, h4, h5 h6 {
 	color: #356c84;
+}
+
+.img-responsive{
+	width:100%;
 }
